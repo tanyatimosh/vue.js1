@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: black;
+    background: #194848;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+strong,
+.bold {
+    font-weight: 500;
+}
+
+
+ul {
+    line-height: 1.7;
+}
+
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.btn {
+    color: #227c76;
+    width: fit-content;
+    border-radius: 99px;
+    border: 1px solid #043f67;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 450px;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+    font-weight: 700;
+    outline: none;
+    background: #fff;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btnDanger:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btnDanger:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*.btnLike {
+    background-color: crimson;
+    font-size:20px;
+    color: white;
+    border: 1px solid #dc143c;
+    border-radius: 99px;
+
+}*/
+
+.btnLike:after {content: '\2665'}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.pt-5 {
+    padding-top: 5rem;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input {
+    margin: 0;
+    outline: none;
+    border: 2px solid #ccc;
+    display: block;
+    width: 100%;
+    color: #2c3e50;
+    padding: 0.5rem 1.5rem;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+
+
+.form-control input:active,
+.form-control input:focus {
+    transition: border 0.32s;
+    border: 2px solid #42b983;
+}
+
+.card {
+    padding: 7rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.card.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
